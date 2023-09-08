@@ -10,18 +10,52 @@ using System.Windows.Forms;
 
 namespace Calculadoras
 {
-    internal static class Program
+    public partial class Form1 : Form
     {
-        /// <summary>
-        ///  The main entry point for the application.
-        /// </summary>
-        [STAThread]
-        static void Main()
+        public Calculadora()
         {
-            // To customize application configuration such as set high DPI settings or default font,
-            // see https://aka.ms/applicationconfiguration.
-            ApplicationConfiguration.Initialize();
-            Application.Run(new Form1());
+            InitializeComponent();
+        }
+        private void button0_Click(object sender, EventArgs e)
+        {
+            tbDisplay.Text = tbDisplay.Text + "0";
+        }
+        private void button1_Click(object sender, EventArgs e)
+        {
+            tbDisplay.Text = tbDisplay.Text + "1";
+        }
+        private void button2_Click(object sender, EventArgs e)
+        {
+            tbDisplay.Text = tbDisplay.Text + "2";
+        }
+        private void button3_Click(object sender, EventArgs e)
+        {
+            tbDisplay.Text = tbDisplay.Text + "3";
+        }
+        private void button4_Click(object sender, EventArgs e)
+        {
+            tbDisplay.Text = tbDisplay.Text + "4";
+        }
+        private void button5_Click(object sender, EventArgs e)
+        {
+            tbDisplay.Text = tbDisplay.Text + "5";
+        }
+        private void button6_Click(object sender, EventArgs e)
+        {
+            tbDisplay.Text = tbDisplay.Text + "6";
+        }
+        private void button7_Click(object sender, EventArgs e)
+        {
+            tbDisplay.Text = tbDisplay.Text + "7";
+        }
+        private void button8_Click(object sender, EventArgs e)
+        {
+            tbDisplay.Text = tbDisplay.Text + "8";
+        }
+        private void button9_Click(object sender, EventArgs e)
+        {
+            tbDisplay.Text = tbDisplay.Text + "9";
         }
     }
+
 }
